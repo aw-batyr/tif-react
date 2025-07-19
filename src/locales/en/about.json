@@ -1,0 +1,44 @@
+{
+  "main": {
+    "block": {
+      "title": "“TurkmenTextile Expo-2025” exhibition and trade fair in Ashgabat.",
+      "texts": [
+        "The International exhibition and trade fair will bring together global industry leaders, innovative manufacturers, and creative designers. It is a unique platform for developing your business in the textile and fashion sector.",
+        "This exhibition aims to position Turkmenistan as a key hub in the global textile and fashion industry, showcasing the country’s rich textile heritage, promoting the adoption of innovative practice in the sector, and strengthening international cooperation.",
+        "“TurkmenTextile Expo-2025” is a platform that connects tradition and innovation, producers and consumers, Turkmenistan and the world!",
+        "Here, you will have the opportunity to connect with leading industry players, present your products or services, learn about the latest market trends, and find new partners and clients.",
+        "Our mission is to strengthen Turkmenistan’s position as a key center of the textile and fashion industry. The exhibition will serve as a platform for exploring sustainable practices, modern technologies, and new design solutions, inspiring the further development of the industry."
+      ]
+    },
+
+    "block_2": {
+      "title": "Why participate?",
+      "subtitle": "“TurkmenTextile Expo-2025” opens broad prospects for participants:",
+      "texts": [
+        "Business meetings with the heads of Turkmenistan's textile industry.",
+        "The opportunity to establish business relationships with textile enterprises and factories in Turkmenistan to develop export directions",
+        "Expanding business networks – a unique opportunity for B2B and B2G meetings, concluding trade agreements, and establishing strategic partnerships.",
+        "Training and development – workshops and lectures from leading global experts will help participants deepen their knowledge and master modern approaches in the textile industry.",
+        "Cultural exchange – a chance to showcase Turkmenistan's rich textile heritage and be inspired by the cultural traditions of other countries."
+      ]
+    },
+
+    "block_3": {
+      "title": "Partnership and sponsorship",
+      "subtitle": "“TurkmenTextile Expo-2025” invites international organizations, associations, and brands to collaborate in promoting their products and services. Partners will gain:",
+      "texts": [
+        "Recognition on the international stage – participation in a large-scale event attracting leading players in the textile and fashion industries.",
+        "Advertising opportunities – integration of the brand into the exhibition’s marketing campaign, including digital and offline channels",
+        "Direct access to the audience – interaction with manufacturers, designers, equipment suppliers, and buyers.",
+        "Contribution to industry development – support for innovations, sustainable practices, and cultural heritage."
+      ]
+    },
+
+    "button": "Become a sponsor "
+  },
+
+  "invataion": {
+    "title": "Invitation to Participate",
+    "text": "The Ministry of Textile Industry in Turkmenistan invites the business community from all over the world to join this unique event, which will be a significant step toward strengthening Turkmenistan’s position on the international economic stage."
+  }
+}

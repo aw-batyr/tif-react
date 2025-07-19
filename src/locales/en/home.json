@@ -1,0 +1,149 @@
+{
+  "banners": {
+    "lg": [
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/surat/en/l.jpg",
+        "link": ""
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/surat/new/web_eng.jpg",
+        "link": "/impressions"
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/new2/web_eng1.jpg",
+        "link": "/impressions-tm"
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/new2/web_eng2.jpg",
+        "link": "/impressions-tm"
+      }
+    ],
+    "md": [
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/surat/en/m.jpg",
+        "link": ""
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/surat/new/web_eng.jpg",
+        "link": "/impressions"
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/new2/eng1.jpg",
+        "link": "/impressions-tm"
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/new2/web_eng2.jpg",
+        "link": "/impressions-tm"
+      }
+    ],
+    "sm": [
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/surat/en/s.jpg",
+        "link": ""
+      },
+
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/surat/new/web_eng.jpg",
+        "link": "/impressions"
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/new2/eng1.jpg",
+        "link": "/impressions-tm"
+      },
+      {
+        "path": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/new2/web_eng2.jpg",
+        "link": "/impressions-tm"
+      }
+    ]
+  },
+
+  "timer": {
+    "title": "Before the event:",
+
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds"
+  },
+
+  "buttons": {
+    "title": "Quick actions",
+    "items": [
+      {
+        "text": "Floor plan",
+        "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Floor%20plan/floor%20plan.pdf",
+        "blank": true
+      },
+      {
+        "text": "Book a stand",
+        "link": "/stend-form"
+      },
+      {
+        "text": "List of participants",
+        "link": "/participants"
+      },
+      {
+        "text": "B2B | B2G meetings",
+        "link": "/B2B-B2G"
+      }
+    ]
+  },
+
+  "partners": {
+    "title": "Partners",
+    "button": ""
+  },
+
+  "about": {
+    "buttons": [
+      {
+        "title": "Floor Plan",
+        "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Floor%20plan/floor%20plan.pdf",
+        "blank": true
+      },
+      {
+        "title": "Book a stand",
+        "link": "/stend-form"
+      },
+      {
+        "title": "Participants list",
+        "link": "/participants"
+      },
+      {
+        "title": "B2B | B2G meetings",
+        "link": "/B2B-B2G"
+      }
+    ],
+
+    "title": "“TurkmenTextile Expo-2025” exhibition and trade fair in Ashgabat",
+    "paragraphs": [
+      "“TurkmenTextile Expo-2025” exhibition and trade fair in Ashgabat An international exhibition and trade fair that will bring together global industry leaders, innovative manufacturers, and designers. Our mission is to strengthen Turkmenistan’s position as a key hub of the textile and fashion industry.",
+      "The exhibition will be a platform for exploring sustainable practices, modern technologies and design solutions, inspiring development of the industry. TurkmenTextile Expo-2025 is a platform that connects tradition and innovation, producers and consumers,  and the world!"
+    ],
+
+    "cards": [
+      {
+        "nums": "10,000 m²",
+        "text": "Exhibition area"
+      },
+      {
+        "nums": "10000+",
+        "text": "Expected visitors"
+      },
+      {
+        "nums": "100+",
+        "text": "Exhibitors from over 30 countries"
+      },
+      {
+        "nums": "80%",
+        "text": "Participants are top-management"
+      }
+    ],
+
+    "button": "More about the exhibition"
+  },
+
+  "sponsors": {
+    "title": "Sponsors and partners"
+  }
+}

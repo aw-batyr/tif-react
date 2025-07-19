@@ -1,70 +1,111 @@
-@import "tailwindcss";
-
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: local("Gilroy-Regular"),
+    url(../fonts/Gilroy-Regular.woff2) format("woff2");
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-Medium"), url(../fonts/Gilroy-Medium.woff2) format("woff2");
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+@font-face {
+  font-family: "Gilroy-Semibold";
+  src: local("Gilroy-Semibold"),
+    url(../fonts/Gilroy-Semibold.woff2) format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy-Black";
+  src: local("Gilroy-Black"), url(../fonts/Gilroy-Black.woff2) format("woff2");
+  font-weight: 900;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@layer base {
+  * {
+    @apply box-border;
   }
-  a:hover {
-    color: #747bff;
+  body {
+    font-family: "Gilroy-Medium";
+    @apply bg-background;
   }
-  button {
-    background-color: #f9f9f9;
+  .c-scrollbar .c-scrollbar_thumb {
+    background-color: #99101d !important;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply w-full mx-auto max-w-[1240px] px-4;
+  }
+
+  .section-y {
+    @apply py-20;
+  }
+
+  .normal {
+    @apply font-["Gilroy-Regular"] font-normal;
+  }
+
+  .semibold {
+    @apply font-["Gilroy-Semibold"] font-semibold;
+  }
+
+  .black {
+    @apply font-['Gilroy-Black'];
+  }
+
+  .h1 {
+    @apply text-[28px] leading-[130%] font-medium;
+  }
+
+  .h2 {
+    @apply text-[24px] md:text-[32px]  text-[#171717];
+  }
+
+  .p {
+    @apply md:text-lg text-base text-on_surface_v;
+  }
+
+  .text-18 {
+    @apply text-lg normal text-on_surface_v;
+  }
+
+  .dot {
+    @apply w-5 h-1 cursor-pointer bg-on_surface_v rounded-[2px];
+  }
+
+  .dot-active {
+    @apply w-5 h-1 bg-on_surface rounded-[2px];
+  }
+
+  .nav-btn {
+    @apply bg-[#D9D9D9] size-12 rounded-full flex items-center justify-center;
+  }
+
+  .news-inner img {
+    @apply object-cover md:h-[500px] h-[300px];
+  }
+
+  .news-inner a {
+    @apply text-primary underline;
+  }
+
+  .page-padding {
+    @apply pt-10 pb-20 md:pt-20 md:pb-[120px];
+  }
+
+  .progress-circle {
+    @apply size-14 rounded-full text-2xl z-10 text-[#5F6674];
+  }
+
+  .input {
+    @apply flex h-14 rounded-[2px] border p-4 focus:ring-[3px] focus:outline-none focus:ring-primary transition-all hover:ring-on_surface ring-outline ring-1 bg-transparent text-base normal file:border-0 file:bg-secondary_container file:outline-none file:text-sm file:w-fit file:text-on_secondary_container file:font-medium  focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50;
   }
 }

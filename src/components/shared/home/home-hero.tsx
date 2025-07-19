@@ -41,7 +41,7 @@ export const HomeHero: FC = () => {
       <section className="flex flex-col gap-5">
         <div ref={emblaRef} className="embla overflow-hidden">
           <div className="embla__container flex">
-            {banners?.map((item, i) =>
+            {/* {banners?.map((item, i) =>
               !item.link ? (
                 <div key={i} className="embla__slide flex-[0_0_100%]">
                   <img
@@ -61,7 +61,8 @@ export const HomeHero: FC = () => {
                   />
                 </Link>
               )
-            )}
+            )} */}
+            <img src="/banner.png" alt="" />
           </div>
         </div>
 

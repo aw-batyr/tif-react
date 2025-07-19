@@ -1,0 +1,76 @@
+{
+  "venue": "Ашхабад, Туркменистан",
+
+  "guide": {
+    "title": "Гид"
+  },
+
+  "contacts": {
+    "title": "Контакты",
+    "link": "/contacts"
+  },
+
+  "support": {
+    "text": "Официальная поддержка",
+    "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/official_support/official_support_ru.pdf"
+  },
+
+  "news": {
+    "title": "Новости",
+
+    "item": ["Пописаться на новости"]
+  },
+
+  "": "",
+
+  "about": {
+    "trigger": "О выставке"
+  },
+
+  "visitors": {
+    "trigger": "Посетителям",
+
+    "items": [
+      {
+        "title": "Почему стоит посетить",
+        "link": ""
+      },
+      {
+        "title": "Список участников",
+        "link": ""
+      },
+      {
+        "title": "Программа",
+        "link": ""
+      },
+      {
+        "title": "Петеводитель",
+        "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_ru.pdf",
+        "pdf": true
+      }
+    ]
+  },
+
+  "exhibitors": {
+    "trigger": "Участникам"
+  },
+
+  "participants": {
+    "trigger": "Посетителям",
+
+    "items": [
+      {
+        "title": "Забронировать стенд",
+        "link": "/stend-form"
+      },
+      {
+        "title": "Почему стоить участвовать",
+        "link": "/stend-form"
+      },
+      {
+        "title": "Тематические разделы",
+        "link": ""
+      }
+    ]
+  }
+}

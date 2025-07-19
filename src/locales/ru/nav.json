@@ -1,0 +1,98 @@
+{
+  "navigation": [
+    {
+      "title": "Путеводитель",
+      "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_ru.pdf",
+      "blank": true
+    },
+    {
+      "title": "Новости",
+      "drop": true,
+      "dropDownContent": [
+        { "text": "Новости", "link": "/news" },
+        {
+          "text": "Подписаться на новости",
+          "modal": true
+        }
+      ]
+    },
+    { "title": "Контакты", "link": "/contacts" },
+    {
+      "title": "О выставке",
+      "drop": true,
+      "dropDownContent": [
+        { "text": "О выставке", "link": "/about" },
+        {
+          "text": "Медиа",
+          "link": "/media"
+        },
+        {
+          "text": "Модные показы",
+          "hover": true,
+          "hoverItems": [
+            {
+              "text": "Зарубежные дизайнеры",
+              "link": "/impressions"
+            },
+            {
+              "text": "Туркменские дизайнеры",
+              "link": "/impressions-tm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Посетителям",
+      "drop": true,
+      "dropDownContent": [
+        { "text": "Почему стоит посетить?", "link": "" },
+        {
+          "text": "Список участников",
+          "link": "/participants"
+        },
+        {
+          "text": "Программа",
+          "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/agenda/agenda_ru.pdf",
+          "blank": true
+        },
+        {
+          "text": "Путеводитель",
+          "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_ru.pdf",
+          "blank": true
+        },
+        {
+          "text": "Мастер классы",
+          "hover": true,
+          "hoverItems": [
+            {
+              "text": "Для дизайнеров",
+              "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Masterclasses_d/Masterclasses_ru.pdf",
+              "blank": true
+            },
+            {
+              "text": "Для посетителей",
+              "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Masterclasses_v/Masterclasses_ru.pdf",
+              "blank": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Участникам",
+      "drop": true,
+      "dropDownContent": [
+        { "text": "Забронировать стенд", "link": "/stend-form" },
+        {
+          "text": "Почему стоит учатсвовать",
+          "link": ""
+        },
+        {
+          "text": "Тематические разделы",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}

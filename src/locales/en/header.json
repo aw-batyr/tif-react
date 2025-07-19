@@ -1,0 +1,71 @@
+{
+  "venue": "Ashgabat, Turkmenistan",
+
+  "guide": {
+    "title": "Guide"
+  },
+
+  "contacts": {
+    "title": "Contacts",
+    "link": "/contacts"
+  },
+
+  "support": {
+    "text": "Official Support",
+    "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/official_support/official_support_eng.pdf"
+  },
+
+  "news": {
+    "trigger": "News",
+
+    "item": ["Subscribe to the news"]
+  },
+
+  "": "",
+
+  "about": {
+    "trigger": "About exhibition"
+  },
+
+  "visitors": {
+    "trigger": "To the Visitors",
+
+    "items": [
+      {
+        "title": "Почему стоит посетить",
+        "link": ""
+      },
+      {
+        "title": "Программа",
+        "link": ""
+      },
+      {
+        "title": "Список участников",
+        "link": ""
+      }
+    ]
+  },
+
+  "exhibitors": {
+    "trigger": "To the Exhibitors"
+  },
+
+  "participants": {
+    "trigger": "Список участников",
+
+    "items": [
+      {
+        "title": "Забронировать стенд",
+        "link": "/stend-form"
+      },
+      {
+        "title": "Почему стоить участвовать",
+        "link": "/stend-form"
+      },
+      {
+        "title": "Тематические разделы",
+        "link": ""
+      }
+    ]
+  }
+}

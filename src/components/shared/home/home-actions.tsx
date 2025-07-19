@@ -27,7 +27,7 @@ export const HomeActions: FC<Props> = ({ className }) => {
   return (
     <section className={cn("", className)}>
       <Container>
-        <div className="grid lg:grid-cols-6 sm:grid-cols-2 grid-cols-1 gap-6">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-6">
           {items.map((item, i) =>
             !item.dropdown ? (
               <Link
@@ -36,9 +36,8 @@ export const HomeActions: FC<Props> = ({ className }) => {
                 target={item.blank ? "_blank" : ""}
               >
                 <Button
-                  variant={"teritary"}
                   size={"lg"}
-                  className="w-full !flex drop-shadow-sm px-2 shadow-md md:text-lg bg-teritary text-on_teritary hover:bg-teritary/90"
+                  className="w-full !flex drop-shadow-sm px-2 shadow-md md:text-lg"
                 >
                   {item.text}
                 </Button>
@@ -52,8 +51,7 @@ export const HomeActions: FC<Props> = ({ className }) => {
               >
                 <Button
                   size={"lg"}
-                  variant={"teritary"}
-                  className="w-full drop-shadow-sm shadow-md md:text-xl text-lg bg-teritary text-on_teritary hover:bg-teritary/90"
+                  className="w-full drop-shadow-sm shadow-md md:text-xl text-lg text-on_teritary"
                 >
                   {item.text}
                   <Chevron w={"40"} h={"40"} color="white" />

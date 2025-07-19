@@ -1,0 +1,102 @@
+{
+  "navigation": [
+    {
+      "title": "Travel Guide",
+      "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_eng.pdf",
+      "blank": "blank"
+    },
+    {
+      "title": "News",
+      "drop": true,
+      "dropDownContent": [
+        { "text": "News", "link": "/news" },
+        {
+          "text": "Subscribe to the news",
+          "modal": true
+        }
+      ]
+    },
+    { "title": "Contact us", "link": "/contacts" },
+
+    {
+      "title": "About exhibition",
+      "drop": true,
+      "dropDownContent": [
+        { "text": "About exhibition", "link": "/about" },
+        {
+          "text": "Media",
+          "link": "/media"
+        },
+        {
+          "text": "Fashion shows",
+          "hover": true,
+          "hoverItems": [
+            {
+              "text": "Foreign designers",
+              "link": "/impressions"
+            },
+            {
+              "text": "Turkmen designers",
+              "link": "/impressions-tm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Visitors",
+      "drop": true,
+      "dropDownContent": [
+        { "text": "Why visit?", "link": "" },
+        {
+          "text": "List of Participants",
+          "link": "/participants"
+        },
+        {
+          "text": "Programme",
+          "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/agenda/agenda_en.pdf",
+          "blank": "blank"
+        },
+        {
+          "text": "Travel guide",
+          "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_eng.pdf",
+          "blank": "blank"
+        },
+        {
+          "text": "Master classes",
+          "hover": true,
+          "hoverItems": [
+            {
+              "text": "For designers",
+              "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Masterclasses_d/Masterclasses_eng.pdf",
+              "blank": true
+            },
+            {
+              "text": "For visitors",
+              "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Masterclasses_v/Masterclasses_eng.pdf",
+              "blank": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exhibitors",
+      "drop": true,
+      "dropDownContent": [
+        {
+          "text": "Book a stand",
+          "link": "/stend-form"
+        },
+        {
+          "text": "Why exhibit",
+          "link": ""
+        },
+        {
+          "text": "Themtic areas of the exhibition",
+          "link": ""
+        }
+      ]
+    }
+  ]
+}
