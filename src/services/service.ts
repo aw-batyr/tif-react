@@ -174,24 +174,12 @@ export const getVideos = async (id: number) => {
   return data;
 };
 
-// export const getSponsors = async (lang: LangState["lang"]) => {
-//   const data = axios_url<PartnersType>("sponsors_and_partners", {
-//     headers: {
-//       "Accept-Language": lang,
-//     },
-//   });
-
-//   return data;
-// };
 export const getSponsors = async (lang: LangState["lang"]) => {
-  const data = axios.get<PartnersType>(
-    "https://turkmentextile.turkmenexpo.com/app/api/v1/sponsors_and_partners",
-    {
-      headers: {
-        "Accept-Language": lang,
-      },
-    }
-  );
+  const data = axios_url<PartnersType>("sponsors", {
+    headers: {
+      "Accept-Language": lang,
+    },
+  });
 
   return data;
 };
