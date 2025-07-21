@@ -2,7 +2,7 @@ import {
   HomeAbout,
   HomeActions,
   HomeHero,
-  HomeNews,
+  // HomeNews,
   HomeOffers,
   HomeSponsors,
   HomeTheme,
@@ -19,7 +19,7 @@ export default function Home() {
       <HomeOffers />
       <HomeTheme />
       <HomeTime />
-      <HomeNews />
+      {/* <HomeNews /> */}
     </div>
   );
 }

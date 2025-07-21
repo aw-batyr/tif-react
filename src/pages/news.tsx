@@ -1,6 +1,6 @@
 import { Container } from "@/components/layout";
 import { Loader } from "@/components/shared";
-import { NewsCard } from "@/components/shared/news-card";
+// import { NewsCard } from "@/components/shared/news-card";
 import { useNews } from "@/hooks/tanstack/use-news";
 import { useScrollTop } from "@/hooks/use-scroll-top";
 import { useLangStore } from "@/store/lang";
@@ -9,7 +9,7 @@ export default function News() {
   useScrollTop();
   const lang = useLangStore((state) => state.lang);
 
-  const { data, isPending } = useNews(lang);
+  const { isPending } = useNews(lang);
 
   if (isPending) return <Loader />;
 
@@ -19,11 +19,11 @@ export default function News() {
         {lang === "ru" ? "Новости" : "News"}
       </h1>
 
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
+      {/* <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
         {data?.map((item) => (
           <NewsCard {...item} key={item.title} />
         ))}
-      </div>
+      </div> */}
     </Container>
   );
 }

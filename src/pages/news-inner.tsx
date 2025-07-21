@@ -12,7 +12,7 @@ export default function NewsInner() {
   const lang = useLangStore((state) => state.lang);
 
   const pageId = Number(id);
-  useScrollTop(pageId);
+  useScrollTop();
 
   const { data, isPending } = useNewsInner(pageId, lang);
   const { data: news } = useNews(lang);

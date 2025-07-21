@@ -14,7 +14,7 @@ import {
   ImpressionsTm,
   Media,
   News,
-  NewsInner,
+  // NewsInner,
   Participants,
   StendForm,
 } from "./pages";
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       { element: <StendForm />, path: "stend-form", errorElement: <Error /> },
       { element: <Contacts />, path: "contacts", errorElement: <Error /> },
       { element: <News />, path: "news", errorElement: <Error /> },
-      { element: <NewsInner />, path: "news/:id", errorElement: <Error /> },
+      // { element: <NewsInner />, path: "news/:id", errorElement: <Error /> },
       {
         element: <Participants />,
         path: "participants",
