@@ -46,7 +46,6 @@ export default {
         outline: "#A1A7B2",
         outline_v: "#D0D3D8",
         background: "#F9F9FA",
-        surface_container: "#EEEDF4",
 
         gray_10: "#433C3D",
         gray_09: "#595051",

@@ -2,7 +2,7 @@
   "navigation": [
     {
       "title": "Путеводитель",
-      "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_ru.pdf",
+      "link": "",
       "blank": true
     },
     {
@@ -39,12 +39,12 @@
         },
         {
           "text": "Программа",
-          "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/agenda/agenda_ru.pdf",
+          "link": "",
           "blank": true
         },
         {
           "text": "Путеводитель",
-          "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_ru.pdf",
+          "link": "",
           "blank": true
         }
       ]

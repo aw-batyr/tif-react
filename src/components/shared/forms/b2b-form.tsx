@@ -94,7 +94,7 @@ export const B2bForm: FC<Props> = ({
       });
 
       const res = await axios.post(
-        "https://turkmentextile.turkmenexpo.com/app/api/v1/form",
+        "https://tif.turkmenexpo.com/app/api/v1/form",
         formData,
         {
           headers: {

@@ -40,14 +40,15 @@ export const ContactsForm: FC<Props> = ({ className }) => {
   const { errors } = form.formState;
 
   return (
-    <div className={cn("bg-primary rounded-[8px] py-8 px-6 ", className)}>
+    <div
+      className={cn("bg-surface_container rounded-[8px] py-8 px-6 ", className)}
+    >
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <h2 className="h2 !text-on_primary lg:mb-8 mb-6">{t("title")}</h2>
+          <h2 className="h2 lg:mb-8 mb-6">{t("title")}</h2>
 
           <div className="flex flex-col gap-8">
             <Field
-              onPrimary
               name="name"
               control={form.control}
               label={t("name")}
@@ -56,14 +57,12 @@ export const ContactsForm: FC<Props> = ({ className }) => {
 
             <div className="flex flex-col lg:flex-row gap-6">
               <Field
-                onPrimary
                 name="email"
                 control={form.control}
                 label="Email"
                 error={errors.email}
               />
               <Field
-                onPrimary
                 name="phone"
                 control={form.control}
                 label={t("phone")}
@@ -72,14 +71,12 @@ export const ContactsForm: FC<Props> = ({ className }) => {
             </div>
 
             <Field
-              onPrimary
               name="company"
               control={form.control}
               label={t("company")}
               error={errors.name}
             />
             <Field
-              onPrimary
               textArea
               name="msg"
               label={t("message")}

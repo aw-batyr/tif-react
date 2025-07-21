@@ -68,11 +68,7 @@ export const Field = ({
                   rows={3}
                   {...field}
                   placeholder={placeholder}
-                  className={cn(
-                    error && "border-[#BA1A1A]",
-                    onPrimary &&
-                      "border-primary_outline_reverse focus:border-white hover:border-white focus:border-1 text-on_primary"
-                  )}
+                  className={cn(error && "border-[#BA1A1A]")}
                 />
               ) : type !== "file" ? (
                 <Input
@@ -80,11 +76,7 @@ export const Field = ({
                   type={type}
                   placeholder={placeholder}
                   disabled={disabled}
-                  className={cn(
-                    error && "border-[#BA1A1A]",
-                    onPrimary &&
-                      "border-primary_outline_reverse focus:border-white hover:border-white focus:border-1 text-on_primary"
-                  )}
+                  className={cn("transition-all", error && "border-[#BA1A1A]")}
                 />
               ) : (
                 <div className="relative">

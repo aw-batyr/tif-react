@@ -9,7 +9,7 @@ export default function Contacts() {
   const { t } = useTranslation("contacts");
 
   return (
-    <div className={"flex flex-col gap-20 pt-10 md:pt-20"}>
+    <div className={"flex flex-col gap-20 pt-10 md:pt-20 bg-surface_bg"}>
       <Container>
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-6">
           <ContactsForm />
@@ -19,7 +19,11 @@ export default function Contacts() {
 
             <div className="flex flex-col gap-20">
               <div className="flex items-center gap-6">
-                <img src="/contacts/map.svg" alt="address" />
+                <img
+                  src="/contacts/map.svg"
+                  alt="address"
+                  className="size-16"
+                />
 
                 <div>
                   <h3 className="text-xl mb-2">{t("address")}</h3>
@@ -29,7 +33,11 @@ export default function Contacts() {
                 </div>
               </div>
               <div className="flex items-center gap-6">
-                <img src="/contacts/phone.svg" alt="phone" />
+                <img
+                  src="/contacts/phone.svg"
+                  alt="phone"
+                  className="size-16"
+                />
 
                 <div>
                   <h3 className="text-xl mb-2">{t("phone")}</h3>
@@ -40,7 +48,11 @@ export default function Contacts() {
               </div>
 
               <div className="flex items-center gap-6">
-                <img src="/contacts/email.svg" alt="email" />
+                <img
+                  src="/contacts/email.svg"
+                  alt="email"
+                  className="size-16"
+                />
 
                 <div>
                   <h3 className="text-xl mb-2">Email:</h3>

@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 import { Navigation } from "@/locales/types/nav.type";
 import { Menu } from "../shared";
 import { useUiStore } from "@/store/ui";
-import { Language, useLangStore } from "@/store/lang";
+import { useLangStore } from "@/store/lang";
 
 interface Props {
   className?: string;
@@ -43,9 +43,10 @@ export const Burger: FC<Props> = () => {
         <SheetHeader className="mt-16 flex flex-col gap-2">
           <Link
             to={
-              lang === Language.RU
-                ? "https://turkmentextile.turkmenexpo.com/app/storage/app/media/official_support/official_support_ru.pdf"
-                : "https://turkmentextile.turkmenexpo.com/app/storage/app/media/official_support/official_support_eng.pdf"
+              // lang === Language.RU
+              //   ? "https://turkmentextile.turkmenexpo.com/app/storage/app/media/official_support/official_support_ru.pdf"
+              //   : "https://turkmentextile.turkmenexpo.com/app/storage/app/media/official_support/official_support_eng.pdf"
+              ""
             }
           >
             <Button

@@ -108,4 +108,8 @@
   .input {
     @apply flex h-14 rounded-[2px] border p-4 focus:ring-[3px] focus:outline-none focus:ring-primary transition-all hover:ring-on_surface ring-outline ring-1 bg-transparent text-base normal file:border-0 file:bg-secondary_container file:outline-none file:text-sm file:w-fit file:text-on_secondary_container file:font-medium  focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50;
   }
+
+  .textarea {
+    @apply flex rounded-[2px] h-24 border p-4 focus:ring-[3px] focus:outline-none focus:ring-primary transition-all hover:ring-on_surface ring-outline ring-1 bg-transparent text-base normal file:border-0 file:bg-secondary_container file:outline-none file:text-sm file:w-fit file:text-on_secondary_container file:font-medium  focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50;
+  }
 }

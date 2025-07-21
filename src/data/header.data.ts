@@ -3,7 +3,7 @@ export const navData = [
     data: [
       {
         title: "Путеводитель",
-        link: "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_ru.pdf",
+        link: "",
         blank: true,
       },
       {
@@ -57,7 +57,7 @@ export const navData = [
           },
           {
             text: "Путеводитель",
-            link: "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_ru.pdf",
+            link: "",
             blank: true,
           },
         ],
@@ -88,7 +88,7 @@ export const navData = [
     data: [
       {
         title: "Travel Guide",
-        link: "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_eng.pdf",
+        link: "",
         blank: true,
       },
       {
@@ -140,7 +140,7 @@ export const navData = [
           },
           {
             text: "Travel Guide",
-            link: "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_eng.pdf",
+            link: "",
             blank: true,
           },
         ],
