@@ -26,6 +26,11 @@ export const Menu: FC<PropsWithChildren<Props>> = ({
   const [isOpen, setIsOpen] = useState(false);
   const setSheet = useUiStore((state) => state.setSheet);
 
+  const handleClick = () => {
+    setIsOpen(false);
+    setSheet(false);
+  };
+
   return (
     <Popover open={isOpen} onOpenChange={() => setIsOpen(!isOpen)}>
       <PopoverTrigger
@@ -50,10 +55,7 @@ export const Menu: FC<PropsWithChildren<Props>> = ({
               <Link
                 key={i}
                 to={item.link ?? ""}
-                onClick={() => {
-                  setIsOpen(false);
-                  setSheet(false);
-                }}
+                onClick={handleClick}
                 className="h-14 px-3 flex gap-3 relative justify-between cursor-pointer items-center hover:bg-slate-300/50 transition-all"
                 target={item.blank ? "_blank" : undefined}
                 rel={item.blank ? "noopener noreferrer" : undefined}
@@ -67,10 +69,7 @@ export const Menu: FC<PropsWithChildren<Props>> = ({
               <div className="relative" key={i}>
                 <div
                   className="h-14 px-3 py-2 flex items-center cursor-pointer hover:bg-slate-300/50 transition-all"
-                  onClick={() => {
-                    setIsOpen(false);
-                    setSheet(false);
-                  }}
+                  onClick={handleClick}
                 >
                   {item.text}
                 </div>

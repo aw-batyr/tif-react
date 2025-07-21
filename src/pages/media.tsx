@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useLangStore } from "@/store/lang";
 import { Loader, MediaModal, Tabs } from "@/components/shared";
@@ -29,10 +29,11 @@ const momentsTabs = [
 
 const Media: FC<Props> = ({ className }) => {
   const [state, setState] = useState(0);
-  const { data, isPending, status } = usePhotos(1);
+  const { data, isPending } = usePhotos(1);
   const { data: videos } = useVideos(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeItem, setActiveItem] = useState({ id: 0, type: "photo" });
+  const { t } = useTranslation("main");
 
   const lang = useLangStore((state) => state.lang);
 
@@ -41,8 +42,6 @@ const Media: FC<Props> = ({ className }) => {
     setActiveItem({ id, type });
   };
 
-  const { t } = useTranslation("main");
-
   const [isCollapse, setIsCollapse] = useState(false);
 
   const getLoading = (i: number) => {
@@ -50,7 +49,10 @@ const Media: FC<Props> = ({ className }) => {
     else return <Loader />;
   };
 
-  console.log(status);
+  const photos = useMemo(
+    () => data?.photos.slice(0, isCollapse ? 1000 : 16),
+    [data?.photos]
+  );
 
   return (
     <>
@@ -84,21 +86,19 @@ const Media: FC<Props> = ({ className }) => {
                 </h3>
                 <div className="grid lg:grid-cols-4 lg:gap-y-4 lg:gap-x-6 md:gap-6 gap-4 grid-cols-2 place-items-center">
                   {state === 0
-                    ? data?.photos
-                        ?.slice(0, isCollapse ? 1000 : 16)
-                        ?.map((photo, i) => (
-                          <div
-                            onClick={() => onItem({ id: i, type: "photo" })}
-                            key={i}
-                            className="cursor-pointer embla__slide basis-1/1 overflow-hidden"
-                          >
-                            <img
-                              src={photo?.photo?.path ?? ""}
-                              alt={photo?.photo?.file_name ?? "photo"}
-                              className="size-full object-cover hover:scale-105 duration-300 transition-all"
-                            />
-                          </div>
-                        ))
+                    ? photos?.map((photo, i) => (
+                        <div
+                          onClick={() => onItem({ id: i, type: "photo" })}
+                          key={i}
+                          className="cursor-pointer embla__slide basis-1/1 overflow-hidden"
+                        >
+                          <img
+                            src={photo?.photo?.path ?? ""}
+                            alt={photo?.photo?.file_name ?? "photo"}
+                            className="size-full object-cover hover:scale-105 duration-300 transition-all"
+                          />
+                        </div>
+                      ))
                     : videos?.videos?.map((video, i) => (
                         <div
                           onClick={() => onItem({ id: i, type: "video" })}

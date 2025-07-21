@@ -47,7 +47,7 @@ export const HomeAbout: FC = () => {
           </div>
 
           <video
-            src="https://turkmentextile.turkmenexpo.com/app/storage/app/media/video/Textile2025.mp4"
+            src="https://tif.turkmenexpo.com/app/storage/app/media/video/web_banner.mp4"
             muted
             controls
             autoPlay

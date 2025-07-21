@@ -20,7 +20,7 @@ export default {
         primary_container: "#F6B2B8",
         on_primary_container: "#112343",
 
-        surface_container: "#F0EFEF",
+        surface_container: "#EBEFE7",
 
         surface_bg: "#F6FBF2",
 
@@ -41,7 +41,7 @@ export default {
 
         surface_high: "#E8E7EF",
         on_surface: "#181D18",
-        on_surface_v: "#6F6466",
+        on_surface_v: "#414941",
 
         outline: "#A1A7B2",
         outline_v: "#D0D3D8",

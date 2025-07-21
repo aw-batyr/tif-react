@@ -26,20 +26,6 @@
         {
           "text": "Media",
           "link": "/media"
-        },
-        {
-          "text": "Fashion shows",
-          "hover": true,
-          "hoverItems": [
-            {
-              "text": "Foreign designers",
-              "link": "/impressions"
-            },
-            {
-              "text": "Turkmen designers",
-              "link": "/impressions-tm"
-            }
-          ]
         }
       ]
     },
@@ -61,22 +47,6 @@
           "text": "Travel guide",
           "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/travel_guide/Travel_guide_eng.pdf",
           "blank": "blank"
-        },
-        {
-          "text": "Master classes",
-          "hover": true,
-          "hoverItems": [
-            {
-              "text": "For designers",
-              "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Masterclasses_d/Masterclasses_eng.pdf",
-              "blank": true
-            },
-            {
-              "text": "For visitors",
-              "link": "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Masterclasses_v/Masterclasses_eng.pdf",
-              "blank": true
-            }
-          ]
         }
       ]
     },

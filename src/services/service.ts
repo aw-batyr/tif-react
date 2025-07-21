@@ -17,7 +17,7 @@ import { DesignersType } from "./types/designers.type";
 import { VideoTypes } from "./types/videos.type";
 
 const axios_url = axios.create({
-  baseURL: "https://turkmentextile.turkmenexpo.com/app/api/v1/",
+  baseURL: "https://tif.turkmenexpo.com/app/api/v1/",
 });
 
 export const postStend = async (data: StandFormType): Promise<boolean> => {
@@ -120,12 +120,24 @@ export const getExhibitionTime = async (lang: LangState["lang"]) => {
   return data;
 };
 
+// export const getNews = async (lang: "ru" | "en") => {
+//   const data = axios_url.get<NewsType>(`news?per_page=100`, {
+//     headers: {
+//       "Accept-Language": lang,
+//     },
+//   });
+
+//   return data;
+// };
 export const getNews = async (lang: "ru" | "en") => {
-  const data = axios_url.get<NewsType>(`news?per_page=100`, {
-    headers: {
-      "Accept-Language": lang,
-    },
-  });
+  const data = axios_url.get<NewsType>(
+    `https://turkmentextile.turkmenexpo.com/app/api/v1/news?per_page=100`,
+    {
+      headers: {
+        "Accept-Language": lang,
+      },
+    }
+  );
 
   return data;
 };
@@ -162,12 +174,24 @@ export const getVideos = async (id: number) => {
   return data;
 };
 
+// export const getSponsors = async (lang: LangState["lang"]) => {
+//   const data = axios_url<PartnersType>("sponsors_and_partners", {
+//     headers: {
+//       "Accept-Language": lang,
+//     },
+//   });
+
+//   return data;
+// };
 export const getSponsors = async (lang: LangState["lang"]) => {
-  const data = axios_url<PartnersType>("sponsors_and_partners", {
-    headers: {
-      "Accept-Language": lang,
-    },
-  });
+  const data = axios.get<PartnersType>(
+    "https://turkmentextile.turkmenexpo.com/app/api/v1/sponsors_and_partners",
+    {
+      headers: {
+        "Accept-Language": lang,
+      },
+    }
+  );
 
   return data;
 };

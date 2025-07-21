@@ -18,9 +18,7 @@ export const AboutThemes: FC<Props> = ({ className }) => {
   const { data, isPending } = useIndustries();
 
   return (
-    <section
-      className={cn("relative w-full bg-[#FDEDEE] -z-10 py-10", className)}
-    >
+    <section className={cn("relative w-full -z-10 py-10", className)}>
       <Container>
         {isPending ? (
           <Loader />

@@ -19,17 +19,17 @@ export const AboutBron: FC<Props> = ({ className }) => {
     >
       <img
         src="/CTA.png"
-        className="absolute top-0 left-0 size-full -z-10 object-cover"
+        className="absolute object-center top-0 left-0 size-full -z-10 object-cover"
       />
 
       <Container>
-        <h3 className="h2 text-center !text-on_primary mb-6">
+        {/* <h3 className="h2 text-center !text-on_primary mb-6">
           {aboutBron[useTranslate(lang)].title}
         </h3>
-        <p className="text-center md:text-lg text-sm  text-primary_03 max-w-[828px] px-5 mx-auto mb-10">
+        <p className="text-center md:text-lg text-sm text-white max-w-[828px] px-5 mx-auto mb-10">
           {aboutBron[useTranslate(lang)].p}
         </p>
-
+ */}
         <div className="flex flex-col md:flex-row items-center gap-6">
           <Link to={"/stend-form"} className="w-full">
             <Button className="bg-reverse_primary w-full text-primary hover:bg-reverse_primary/90">

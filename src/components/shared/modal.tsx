@@ -21,7 +21,7 @@ export const Modal: FC<Props> = ({ className, title }) => {
       </DialogTrigger>
 
       <DialogContent>
-        <SubscribeForm className="" modal />
+        <SubscribeForm modal />
       </DialogContent>
     </Dialog>
   );

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import { Container, Burger } from "./";
 import { MapPin, Smartphone } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,6 +7,7 @@ import { LangMenu, Logo, Menu } from "../shared";
 import { Language, useLangStore } from "@/store/lang";
 import { Navigation } from "@/locales/types/nav.type";
 import { useTranslation } from "react-i18next";
+import { useWordsTranslate } from "@/hooks/use-translate";
 
 export const Header: FC = () => {
   const lang = useLangStore((state) => state.lang);
@@ -15,6 +16,14 @@ export const Header: FC = () => {
 
   const nav = t("navigation", { returnObjects: true }) as Navigation[];
 
+  const data = useMemo(() => nav.slice(0, 3), [nav]);
+  const data2 = useMemo(() => nav.slice(3, 6), [nav]);
+
+  const address = useWordsTranslate(
+    "Ашхабад, Туркменистан",
+    "Ashgabat, Turkmenistan"
+  );
+
   return (
     <header>
       <div className="h-12 hidden lg:flex bg-sur text-surface-bg items-center overflow-hidden">
@@ -22,15 +31,11 @@ export const Header: FC = () => {
           <div className="gap-8 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <MapPin />
-              <h4 className="text-sm">
-                {lang === "ru"
-                  ? "Ашхабад, Туркменистан"
-                  : "Ashgabat, Turkmenistan"}
-              </h4>
+              <h4 className="text-sm">{address}</h4>
             </div>
 
             <nav className="flex items-center gap-6">
-              {nav.slice(0, 3).map((item) =>
+              {data.map((item) =>
                 !item.drop ? (
                   <Link
                     target={item.blank ? "_blank" : ""}
@@ -71,7 +76,7 @@ export const Header: FC = () => {
             </Link>
 
             <nav className="lg:flex hidden items-center gap-6 text-white">
-              {nav.slice(3, 6).map((item) =>
+              {data2.map((item) =>
                 !item.drop ? (
                   <Link className="py-2" key={item.title} to={item.link || ""}>
                     {item.title}
