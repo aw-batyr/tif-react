@@ -10,7 +10,7 @@ export const offersData = [
       },
       {
         img: "/offer-2.png",
-        title: "Ознакомьтесь с планом выставки TurkmenTextile Expo 2025",
+        title: "Ознакомьтесь с планом выставки TIF Expo 2025",
         btnText: "Скачать план выставки",
         text: `Как выбрать лучшее место на выставке? Вы всегда должны помнить, что удачное расположение выставочной экспозиции повышает Ваши шансы привлечь внимание Ваших потенциальных клиентов`,
         link: "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Floor%20plan/floor%20plan.pdf",
@@ -29,7 +29,7 @@ export const offersData = [
       },
       {
         img: "/offer-2.png",
-        title: "Explore “TurkmenTextile Expo-2025” plan;",
+        title: "Explore “TIF Expo-2025” plan;",
         btnText: "Download exhibition plan.",
         text: `How to choose the best location at the exhibition? A prime spot increases your chances to attract potential clients;`,
         link: "https://turkmentextile.turkmenexpo.com/app/storage/app/media/Floor%20plan/floor%20plan.pdf",
