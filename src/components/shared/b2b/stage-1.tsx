@@ -93,15 +93,15 @@ export const Stage1: FC<Props> = ({ handleNext }) => {
         />
         <Field
           control={control}
-          name={"job_title"}
-          error={formState.errors.job_title as FieldError}
+          name={"position_title"}
+          error={formState.errors.position_title as FieldError}
           placeholder=""
           label={b2bStage1[useTranslate(lang)].data[2].label}
         />
         <Field
           control={control}
-          name={"participants_number"}
-          error={formState.errors.participants_number as FieldError}
+          name={"participants_count"}
+          error={formState.errors.participants_count as FieldError}
           placeholder=""
           label={b2bStage1[useTranslate(lang)].data[3].label}
         />
@@ -114,8 +114,8 @@ export const Stage1: FC<Props> = ({ handleNext }) => {
         />
         <Field
           control={control}
-          name={"email_address"}
-          error={formState.errors.email_address as FieldError}
+          name={"email"}
+          error={formState.errors.email as FieldError}
           placeholder=""
           label={b2bStage1[useTranslate(lang)].data[5].label}
         />

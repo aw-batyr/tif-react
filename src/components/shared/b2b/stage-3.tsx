@@ -31,30 +31,30 @@ export const Stage3: FC<Props> = ({ handlePrev }) => {
       <div className="flex flex-col gap-6">
         <Field
           control={control}
-          name={"preferred_meeting_datetime"}
-          error={formState.errors.preferred_meeting_datetime as FieldError}
+          name={"preferred_datetime"}
+          error={formState.errors.preferred_datetime as FieldError}
           placeholder=""
           label={b2bStage3[useTranslate(lang)].data[0].label}
         />
         <Field
           control={control}
-          name={"preferred_mode"}
-          error={formState.errors.preferred_mode as FieldError}
+          name={"meeting_format"}
+          error={formState.errors.meeting_format as FieldError}
           placeholder=""
           label={b2bStage3[useTranslate(lang)].data[1].label}
         />
         <Field
           control={control}
-          name={"language_preference"}
-          error={formState.errors.language_preference as FieldError}
+          name={"preferred_language"}
+          error={formState.errors.preferred_language as FieldError}
           placeholder=""
           label={b2bStage3[useTranslate(lang)].data[2].label}
         />
 
         <Field
           control={control}
-          name={"additional_technical"}
-          error={formState.errors.additional_technical as FieldError}
+          name={"logistics_requirements"}
+          error={formState.errors.logistics_requirements as FieldError}
           placeholder=""
           label={b2bStage3[useTranslate(lang)].data[3].label}
         />

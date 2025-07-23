@@ -68,7 +68,7 @@ export const Field = ({
                   rows={3}
                   {...field}
                   placeholder={placeholder}
-                  className={cn(error && "border-[#BA1A1A]")}
+                  className={cn(error && " border-[#BA1A1A]")}
                 />
               ) : type !== "file" ? (
                 <Input
@@ -76,7 +76,10 @@ export const Field = ({
                   type={type}
                   placeholder={placeholder}
                   disabled={disabled}
-                  className={cn("transition-all", error && "border-[#BA1A1A]")}
+                  className={cn(
+                    "transition-all",
+                    error && "focus:border-primary border-[#BA1A1A]"
+                  )}
                 />
               ) : (
                 <div className="relative">

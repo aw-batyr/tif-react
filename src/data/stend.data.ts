@@ -23,7 +23,7 @@ export const stendData = [
   },
 
   {
-    cover: "Book a stand:",
+    cover: "Book a stand",
     h2: "Select one of the options:",
 
     radio: "Stand space only",

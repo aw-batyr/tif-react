@@ -38,5 +38,5 @@ export const sponsorDefaultValues = {
   email: "",
   phone: "",
   website: "",
-  visa_support: "",
+  visa_support: "0",
 };

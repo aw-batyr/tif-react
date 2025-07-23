@@ -40,13 +40,17 @@ export default function BecomeSponsor() {
     try {
       const status = await postSponsor(data);
 
-      if (status) setSuccess(true);
+      if (status) {
+        setSuccess(true);
+      }
     } catch (error) {
       console.error("POST sponsor error", error);
     }
   };
 
-  const { errors } = form.formState;
+  const errors = form.formState.errors;
+
+  const translate = useTranslate(lang);
 
   return (
     <div>
@@ -65,43 +69,43 @@ export default function BecomeSponsor() {
               onSubmit={form.handleSubmit(onSubmit)}
             >
               <Field
-                label={stendData[useTranslate(lang)].label_1}
+                label={stendData[translate].label_1}
                 name="company_name"
                 control={form.control}
                 error={errors.company_name}
               />
               <Field
-                label={stendData[useTranslate(lang)].label_2}
+                label={stendData[translate].label_2}
                 name="rep_name"
                 control={form.control}
                 error={errors.rep_name}
               />
               <Field
-                label={stendData[useTranslate(lang)].label_3}
+                label={stendData[translate].label_3}
                 name="job_title"
                 control={form.control}
                 error={errors.job_title}
               />
               <Field
-                label={stendData[useTranslate(lang)].label_4}
+                label={stendData[translate].label_4}
                 name="country"
                 control={form.control}
                 error={errors.country}
               />
               <Field
-                label={stendData[useTranslate(lang)].label_5}
+                label={stendData[translate].label_5}
                 name="email"
                 control={form.control}
                 error={errors.email}
               />
               <Field
-                label={stendData[useTranslate(lang)].label_6}
+                label={stendData[translate].label_6}
                 name="phone"
                 control={form.control}
                 error={errors.phone}
               />
               <Field
-                label={stendData[useTranslate(lang)].label_7}
+                label={stendData[translate].label_7}
                 name="website"
                 control={form.control}
               />
@@ -112,7 +116,7 @@ export default function BecomeSponsor() {
                 render={({ field }) => (
                   <FormItem className="space-y-5">
                     <FormLabel className="text-xl">
-                      {stendData[useTranslate(lang)].visa}
+                      {stendData[translate].visa}
                     </FormLabel>
 
                     <FormControl>
@@ -124,24 +128,24 @@ export default function BecomeSponsor() {
                         <FormItem className="flex items-center space-x-5 space-y-0">
                           <FormControl>
                             <RadioGroupItem
-                              value={"yes"}
-                              checked={field.value === "yes"}
+                              value={"0"}
+                              checked={field.value === "0"}
                             />
                           </FormControl>
                           <FormLabel className="text-base">
-                            {stendData[useTranslate(lang)].visa_radio}
+                            {stendData[translate].visa_radio}
                           </FormLabel>
                         </FormItem>
 
                         <FormItem className="flex items-center space-x-5 space-y-0 ">
                           <FormControl>
                             <RadioGroupItem
-                              value={"no"}
-                              checked={field.value === "no"}
+                              value={"1"}
+                              checked={field.value === "1"}
                             />
                           </FormControl>
                           <FormLabel className="text-base">
-                            {stendData[useTranslate(lang)].visa_radio_2}
+                            {stendData[translate].visa_radio_2}
                           </FormLabel>
                         </FormItem>
                       </RadioGroup>
@@ -154,7 +158,7 @@ export default function BecomeSponsor() {
                 {form.formState.isSubmitting ? (
                   <Loader className="animate-spin" />
                 ) : (
-                  stendData[useTranslate(lang)].button
+                  stendData[translate].button
                 )}
               </Button>
             </motion.form>

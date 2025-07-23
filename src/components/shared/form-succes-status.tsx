@@ -14,7 +14,7 @@ export const FormSuccesStatus: FC<Props> = ({ className, delay = 0.15 }) => {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0, transition: { delay: delay } }}
-      className={cn("flex flex-col gap-8 my-16", className)}
+      className={cn("flex flex-col gap-8 mt-16", className)}
     >
       <h3 className="text-3xl text-center">Форма успешно отправлена!</h3>
 

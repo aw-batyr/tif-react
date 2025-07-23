@@ -31,15 +31,15 @@ export const Stage2: FC<Props> = ({ handleNext, handlePrev }) => {
       <div className="flex flex-col gap-8">
         <Field
           control={control}
-          name={"meeting_objective"}
-          error={formState.errors.meeting_objective as FieldError}
+          name={"meeting_purpose"}
+          error={formState.errors.meeting_purpose as FieldError}
           placeholder=""
           label={b2bStage2[useTranslate(lang)].data[0].label}
         />
         <Field
           control={control}
-          name={"proposal_description"}
-          error={formState.errors.proposal_description as FieldError}
+          name={"project_description"}
+          error={formState.errors.project_description as FieldError}
           placeholder=""
           label={b2bStage2[useTranslate(lang)].data[1].label}
         />
@@ -55,8 +55,8 @@ export const Stage2: FC<Props> = ({ handleNext, handlePrev }) => {
 
         <Field
           control={control}
-          name={"sector_industry"}
-          error={formState.errors.sector_industry as FieldError}
+          name={"industry"}
+          error={formState.errors.industry as FieldError}
           placeholder=""
           label={b2bStage2[useTranslate(lang)].data[3].label}
         />
@@ -69,8 +69,8 @@ export const Stage2: FC<Props> = ({ handleNext, handlePrev }) => {
         />
         <Field
           control={control}
-          name={"government_experience"}
-          error={formState.errors.government_experience as FieldError}
+          name={"gov_experience"}
+          error={formState.errors.gov_experience as FieldError}
           placeholder=""
           label={b2bStage2[useTranslate(lang)].data[5].label}
         />

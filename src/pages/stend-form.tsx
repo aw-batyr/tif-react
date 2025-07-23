@@ -15,7 +15,7 @@ import {
   StandFormType,
 } from "@/lib/get-stend-form-details";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Loader } from "lucide-react";
 import { Cover } from "@/components/layout";
@@ -23,8 +23,10 @@ import { postStend } from "@/services/service";
 import { stendData } from "@/data/stend.data";
 import { useTranslate } from "@/hooks/use-translate";
 import { useLangStore } from "@/store/lang";
+import { useScrollTop } from "@/hooks/use-scroll-top";
 
 export default function StendForm() {
+  useScrollTop();
   const lang = useLangStore((state) => state.lang);
   const [success, setSuccess] = useState(false);
   const form = useForm<StandFormType>({
@@ -38,11 +40,7 @@ export default function StendForm() {
     if (status) setSuccess(true);
   };
 
-  useEffect(() => {
-    window.scrollTo({ behavior: "smooth", top: 0 });
-  }, []);
-
-  const { errors } = form.formState;
+  const errors = form.formState.errors;
 
   const translate = useTranslate(lang);
 
@@ -62,7 +60,7 @@ export default function StendForm() {
             >
               <FormField
                 control={form.control}
-                name="space_package"
+                name="selection_option"
                 render={({ field }) => (
                   <FormItem className="space-y-5">
                     <FormLabel className="text-xl">
@@ -112,22 +110,22 @@ export default function StendForm() {
               />
               <Field
                 label={stendData[translate].label_2}
-                name="rep_name"
+                name="representative_name"
                 control={form.control}
-                error={errors.rep_name}
+                error={errors.representative_name}
               />
               <Field
                 label={stendData[translate].label_3}
-                name="job_title"
+                name="position_title"
                 control={form.control}
-                error={errors.job_title}
+                error={errors.position_title}
               />
               <Field
                 label={stendData[translate].number_of_participants}
                 type="number"
-                name="participants_number"
+                name="participants_count"
                 control={form.control}
-                error={errors.participants_number}
+                error={errors.participants_count}
               />
               <Field
                 label={stendData[translate].label_4}
@@ -143,9 +141,9 @@ export default function StendForm() {
               />
               <Field
                 label={stendData[translate].label_6}
-                name="phone"
+                name="phone_number"
                 control={form.control}
-                error={errors.phone}
+                error={errors.phone_number}
               />
 
               <Field
@@ -172,8 +170,8 @@ export default function StendForm() {
                         <FormItem className="flex items-center space-x-5 space-y-0">
                           <FormControl>
                             <RadioGroupItem
-                              value={"yes"}
-                              checked={field.value === "yes"}
+                              value={true}
+                              checked={field.value}
                             />
                           </FormControl>
                           <FormLabel className="text-base">
@@ -184,8 +182,8 @@ export default function StendForm() {
                         <FormItem className="flex items-center space-x-5 space-y-0 ">
                           <FormControl>
                             <RadioGroupItem
-                              value={"no"}
-                              checked={field.value === "no"}
+                              value={false}
+                              checked={!field.value}
                             />
                           </FormControl>
                           <FormLabel className="text-base">

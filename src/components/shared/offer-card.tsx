@@ -2,14 +2,14 @@ import { cn } from "@/lib/utils";
 import { FC } from "react";
 import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface Props {
   title: string;
   text: string;
   className?: string;
   img: string;
-  link: string;
+  link?: string;
   btnText: string;
 }
 
@@ -18,7 +18,6 @@ export const OfferCard: FC<Props> = ({
   title,
   text,
   img,
-  link,
   btnText,
 }) => {
   return (
@@ -44,11 +43,15 @@ export const OfferCard: FC<Props> = ({
           </p>
         </div>
 
-        <Link className="absolute bottom-0 left-0" target="_blank" to={link}>
+        <div
+          className="absolute bottom-0 left-0"
+          // target="_blank"
+          // to={link ?? ""}
+        >
           <Button className="text-sm px-0 h-fit py-0 z-20" variant={"link"}>
             {btnText} <ArrowUpRight />
           </Button>
-        </Link>
+        </div>
       </div>
     </article>
   );
