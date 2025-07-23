@@ -99,6 +99,7 @@ export const Stage1: FC<Props> = ({ handleNext }) => {
           label={b2bStage1[useTranslate(lang)].data[2].label}
         />
         <Field
+          type="number"
           control={control}
           name={"participants_count"}
           error={formState.errors.participants_count as FieldError}
