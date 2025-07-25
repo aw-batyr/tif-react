@@ -46,7 +46,7 @@ export const Menu: FC<PropsWithChildren<Props>> = ({
         )}
       </PopoverTrigger>
 
-      <PopoverContent className="w-fit relative z-[200] px-0 bg-surface_container">
+      <PopoverContent className="w-fit relative z-50 px-0 bg-surface_container">
         {dropDownContent &&
           dropDownContent.map((item, i) =>
             item.hover ? (
