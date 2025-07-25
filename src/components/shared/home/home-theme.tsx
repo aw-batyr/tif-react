@@ -6,7 +6,6 @@ import { homeTheme } from "@/data/home/home-theme.data";
 import { useTranslate } from "@/hooks/use-translate";
 import { useIndustries } from "@/hooks/tanstack/use-industries";
 import { Loader } from "../loader";
-import { cn } from "@/lib/utils";
 
 export const HomeTheme: FC = () => {
   const lang = useLangStore((state) => state.lang);
@@ -27,7 +26,7 @@ export const HomeTheme: FC = () => {
             <ThemeCard
               key={i}
               {...item}
-              className={cn(i === 8 && "md:col-start-2")}
+              className={i === 8 ? "md:col-start-2" : ""}
             />
           ))}
         </div>
